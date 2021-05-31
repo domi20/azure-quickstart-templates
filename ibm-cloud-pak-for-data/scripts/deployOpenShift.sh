@@ -45,7 +45,7 @@ export OUTBOUNDTYPE=${36}
 export INSTALLERHOME=/home/$SUDOUSER/.openshift
 
 #Test yum update
-yum update --disablerepo=* --enablerepo="*microsoft*"
+yum -y update --disablerepo=* --enablerepo="*microsoft*"
 
 # Grow Root File System
 yum -y install cloud-utils-growpart.noarch
